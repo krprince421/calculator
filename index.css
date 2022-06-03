@@ -1,0 +1,17 @@
+.main{
+    width: 70vh ;
+    background-color: #D5D6D5 ;
+    padding : 5px ;
+    
+}
+.calculator-input-data{
+    background-color:#FFFEF7 ;
+    display: flex ; 
+    justify-content: center ;
+    border: 2px solid #D5D6D5 ;
+    border-radius: 5px ;
+    
+}
+input[type="text"]:focus{
+    border:0px ;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "index.css">
+    <script src = "index.js"></script>
+
+    <title>Calculator</title>
+
+</head>
+<body>
+<!-- Main Container Starts here " -->
+<h2 style="text-align: center  ;">Calculator</h2>
+    <div class = "container main">
+        <div class = "row">
+            <div class = "col-12" >
+                <input id = "expression" oninput="myFunction()" type = "text" style="width: 100% ; height: 12vh ; font-size: 2rem ; background-color: #D5D6D5  ; border: 0px ;">
+            </div>
+        </div>
+        <!-- First Row of Calculator starts here -->
+        <div class = "row" style="height: 12vh ; margin: 0 ; padding: 0 ;">
+            <div class = "col-3 calculator-input-data" onclick="clearExpression()">
+                <h3 style="margin: auto ;">AC</h3>
+                      
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="changeSign()">
+                <h3 style="margin: auto ;">+/-</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('%')">
+                <h3 style="margin: auto ;" >%</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('/')">
+                <h3 style="margin: auto ;" >/</h3>
+            </div>
+
+        </div>
+        <!-- Second Row of Calculator starts here -->
+        <div class = "row" style="height: 12vh ; margin: 0 ; padding: 0 ;">
+            <div class = "col-3 calculator-input-data " onclick="digitClick('9')">
+                <h3 style="margin: auto ;">9</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('8')">
+                <h3 style="margin: auto ;">8</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('7')">
+                <h3 style="margin: auto ;">7</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('*')">
+                <h3 style="margin: auto ;">*</h3>
+            </div>
+
+        </div>
+        <!-- Third Row of Calculator starts here -->
+        <div class = "row" style="height: 12vh ; margin: 0 ; padding: 0 ;">
+            <div class = "col-3 calculator-input-data " onclick="digitClick('4')">
+                <h3 style="margin: auto ;">4</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('5')">
+                <h3 style="margin: auto ;">5</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('6')">
+                <h3 style="margin: auto ;">6</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('-')">
+                <h3 style="margin: auto ;">-</h3>
+            </div>
+
+        </div>
+
+        <!-- Fourth Row of Calculator starts here -->
+        <div class = "row" style="height: 12vh ; margin: 0 ; padding: 0 ;">
+            <div class = "col-3 calculator-input-data " onclick="digitClick('1')">
+                <h3 style="margin: auto ;">1</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('2')">
+                <h3 style="margin: auto ;">2</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('3')">
+                <h3 style="margin: auto ;">3</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('+')">
+                <h3 style="margin: auto ;">+</h3>
+            </div>
+
+        </div>
+
+        <!-- Fiifth Row of Calculator starts here -->
+        <div class = "row" style="height: 12vh ; margin: 0 ; padding: 0 ;">
+            <div class = "col-6 calculator-input-data" onclick="digitClick('0')">
+                <h3 style="margin: auto ;">0</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="digitClick('.')">
+                <h3 style="margin: auto ;">.</h3>
+            </div>
+            <div class = "col-3 calculator-input-data" onclick="printResult()">
+                <h3 style="margin: auto ;">=</h3>
+            </div>
+            
+
+        </div>
+
+
+
+    </div>
+
+
+    
+</body>
+</html>
