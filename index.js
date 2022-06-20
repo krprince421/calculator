@@ -19,7 +19,7 @@ function printResult(){
     try{
         document.getElementById("expression").value = eval( equation ) ;
     }catch( err ){
-        document.getElementById("expression").value = "Invalid Equation" ;   
+        document.getElementById("expression").value = "Invalid Expression" ;   
         
     }
         
